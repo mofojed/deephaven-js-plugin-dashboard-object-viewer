@@ -84,5 +84,8 @@
     "extends": [
       "@deephaven/stylelint-config"
     ]
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
