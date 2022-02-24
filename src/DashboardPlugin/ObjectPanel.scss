@@ -9,4 +9,12 @@
   .react-json-view {
     background-color: transparent !important;
   }
+
+  .object-panel-data {
+    overflow-wrap: break-word;
+
+    .error-message {
+      color: $danger;
+    }
+  }
 }

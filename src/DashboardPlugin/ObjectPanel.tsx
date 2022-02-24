@@ -114,14 +114,14 @@ export class ObjectPanel extends React.Component<
       return null;
     }
     if (!isJsWidget(object)) {
-      return <div>Object is not a widget</div>;
+      return <div className="error-message">Object is not a widget</div>;
     }
     const data = object.getDataAsBase64();
     try {
       const dataJson = JSON.parse(atob(data));
       return <ReactJson src={dataJson} theme="monokai" />;
     } catch (e) {
-      return <div>{data}</div>;
+      return <div className="base64-data">{data}</div>;
     }
   }
 
